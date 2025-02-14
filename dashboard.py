@@ -71,7 +71,7 @@ for items in top_10_pkm[:10]:  # Prendiamo solo i primi 10 Pokémon
     pokemon = items[0]
     percentage = items[1]
     se = 1.96 * np.sqrt(percentage/100*(1-percentage/100)/len(filtered_data))  # Percentuale di utilizzo
-    pokemon_image_path = f"images/{pokemon.capitalize()}.png"
+    pokemon_image_path = f"{pokemon.capitalize()}.png"
     
     try:
         image = Image.open(pokemon_image_path)
@@ -121,7 +121,7 @@ for starter in starters:
         pokemon = items[0]
         percentage = items[1]
         se = 1.96 * np.sqrt(percentage/100*(1-percentage/100)/len(filtered_data))  # Percentuale di utilizzo
-        pokemon_image_path_starter = f"images/{pokemon.capitalize()}.png"
+        pokemon_image_path_starter = f"{pokemon.capitalize()}.png"
         
         try:
             image = Image.open(pokemon_image_path_starter)
